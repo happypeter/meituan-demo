@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Home from './Home'
 
 import {
   BrowserRouter as Router,
@@ -14,6 +15,7 @@ class Main extends Component {
     return(
       <Router>
         <div>
+          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/faq" component={Faq} />
         </div>

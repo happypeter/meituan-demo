@@ -3,8 +3,7 @@ import Home from './Home'
 
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 const About = () => <h1>About</h1>

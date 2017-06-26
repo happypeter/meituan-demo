@@ -4,27 +4,28 @@ import HomeIcon from './HomeIcon'
 import UserIcon from './UserIcon'
 import OrderIcon from './OrderIcon'
 import {
-  Link
+  Link,
+  withRouter
 } from 'react-router-dom'
 
-const Footer = () => (
+const Footer = ({ location }) => (
   <div className="footer">
     <div className="item">
       <Link to="/">
-        <HomeIcon active={true} />
+        <HomeIcon active={location.pathname === '/'} />
       </Link>
     </div>
     <div className="item">
-      <Link to="/">
-        <OrderIcon active={true} />
+      <Link to="/order">
+        <OrderIcon active={location.pathname === '/order'} />
       </Link>
     </div>
     <div className="item">
-      <Link to="/">
-        <UserIcon active={true} />
+      <Link to="/mine">
+        <UserIcon active={location.pathname === '/mine'} />
       </Link>
     </div>
   </div>
 )
 
-export default Footer
+export default withRouter(Footer)

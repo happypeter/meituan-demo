@@ -1,7 +1,8 @@
 import React from 'react'
 
 const HomeIcon = ({ active }) => (
-  <svg width="24px" height="26px" viewBox="0 0 24 26">
+  <div>
+    <svg width="24px" height="26px" viewBox="0 0 24 26">
       <defs></defs>
       <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g id="home-icon" transform="translate(0.000000, 1.000000)" stroke={active ? '#333333' : '#9F9F9F'}>
@@ -10,7 +11,9 @@ const HomeIcon = ({ active }) => (
               <path d="M0.5,24 L23.5,24" id="Path-2" stroke={active ? '#333333' : '#FFFFFF'}></path>
           </g>
       </g>
-  </svg>
+    </svg>
+    <div style={{ 'color': active ? '#333333' : '#9F9F9F'}}>首页</div>
+  </div>
 )
 
 export default HomeIcon

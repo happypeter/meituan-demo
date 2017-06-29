@@ -16,8 +16,7 @@ a {
 }
 
 .app>.header-wrap {
-  border: 1px solid red;
-  height: 100px;
+  height: 50px;
   flex-shrink: 0;
 }
 

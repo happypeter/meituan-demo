@@ -28,7 +28,7 @@ class DeliverIcon extends Component {
               c0,9.129,7.404,16.531,16.527,16.531c9.133,0,16.53-7.402,16.53-16.531C490,322.818,454.45,279.219,406.497,266.9z"/>
           </svg>
         </div>
-        <div className="title">美团专送</div>
+        <div className="title">专送</div>
       </div>
     )
   }

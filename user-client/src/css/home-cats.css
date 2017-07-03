@@ -57,3 +57,20 @@
 .home-cats .all .icon {
   background-color: #60D4E1;
 }
+
+.slider-wrap {
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+}
+.slider-wrap #slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-wrap #slider .slide {
+  flex-shrink: 0;;
+}

@@ -26,7 +26,7 @@ class TeaIcon extends Component {
           </g>
           </svg>
         </div>
-        <div className="title">下午茶</div>
+        <div className="title">早茶</div>
       </div>
     )
   }
